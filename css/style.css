@@ -1,0 +1,94 @@
+@font-face {
+    font-family: iransans;
+    src: url(./fonts/woff2/IRANSansWeb\(FaNum\).woff2);
+    /* src: url(./fonts/woff2/IRANSansWeb\(FaNum\)_Bold.woff2);
+    src: url(./fonts/woff2/IRANSansWeb\(FaNum\)_Light.woff2);
+    src: url(./fonts/woff2/IRANSansWeb\(FaNum\)_Medium.woff2);
+    src: url(./fonts/woff2/IRANSansWeb\(FaNum\)_UltraLight.woff2); */
+    
+}
+
+* {
+    direction: rtl;
+    font-size: 14px;
+    font-family: 'iransans';
+    
+}
+
+p{
+    margin: 0px;
+}
+
+input {
+    outline: none;
+}
+
+textarea {
+    outline: none;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 500px;
+    /* margin-left: 75px;
+    margin-right: 75px; */
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .filter-side {
+        width: 250px;
+    
+    }
+
+  
+}
+
+@media screen and (min-width: 0px) {
+    .filter-side {
+        width: 100%;
+
+    }
+
+
+}
+/* checkBox */
+input[type="checkbox"]::before {
+    content: "";
+    width: 0.90em;
+    height: 0.90em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    background-color: #DEC4B8;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+input[type="checkbox"] {
+    appearance: none;
+    background-color: transparent;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 1px solid #FFFF;
+    transform: translateY(-0.075em);
+    display: grid;
+        place-content: center;
+}
+
