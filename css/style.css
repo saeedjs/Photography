@@ -1,11 +1,6 @@
 @font-face {
     font-family: iransans;
-    src: url(./fonts/woff2/IRANSansWeb\(FaNum\).woff2);
-    /* src: url(./fonts/woff2/IRANSansWeb\(FaNum\)_Bold.woff2);
-    src: url(./fonts/woff2/IRANSansWeb\(FaNum\)_Light.woff2);
-    src: url(./fonts/woff2/IRANSansWeb\(FaNum\)_Medium.woff2);
-    src: url(./fonts/woff2/IRANSansWeb\(FaNum\)_UltraLight.woff2); */
-    
+    src: url(./fonts/woff2/IRANSansWeb\(FaNum\).woff2)
 }
 
 * {
@@ -65,7 +60,7 @@ textarea {
 
 }
 /* checkBox */
-input[type="checkbox"]::before {
+input[type="radio"]::before {
     content: "";
     width: 0.90em;
     height: 0.90em;
@@ -75,10 +70,10 @@ input[type="checkbox"]::before {
     background-color: #DEC4B8;
 }
 
-input[type="checkbox"]:checked::before {
+input[type="radio"]:checked::before {
     transform: scale(1);
 }
-input[type="checkbox"] {
+input[type="radio"] {
     appearance: none;
     background-color: transparent;
     margin: 0;
